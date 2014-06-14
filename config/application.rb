@@ -21,7 +21,7 @@ module KuuKoo
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
-    config.time_zone = 'Pacific Time (US & Canada)'
-    config.active_record.default_timezone = 'Pacific Time (US & Canada)'
+    config.time_zone = 'Mountain Time (US & Canada)'
+    config.active_record.default_timezone = 'Mountain Time (US & Canada)'
    end
 end
