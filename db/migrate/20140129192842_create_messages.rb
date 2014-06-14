@@ -8,7 +8,6 @@ class CreateMessages < ActiveRecord::Migration
       t.integer :recipient_phone_number
       t.datetime :send_time
       t.string :text
-
       t.timestamps
     end
   end

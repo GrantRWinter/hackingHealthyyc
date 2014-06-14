@@ -17,15 +17,15 @@ KuuKoo::Application.configure do
   config.action_mailer.raise_delivery_errors = true
 
 
-config.action_mailer.delivery_method = :smtp
-config.action_mailer.smtp_settings = {
-  address:              'smtp.mandrillapp.com',
-  port:                 587,
-  domain:               'example.com',
-  user_name:            'grantrwinter@gmail.com',
-  password:             '7OL4J5PdZEd7jiRdM1lk6w',
-  authentication:       'plain',
-  enable_starttls_auto: true  }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address:              'smtp.mandrillapp.com',
+    port:                 587,
+    domain:               'example.com',
+    user_name:            'grantrwinter@gmail.com',
+    password:             '7OL4J5PdZEd7jiRdM1lk6w',
+    authentication:       'plain',
+    enable_starttls_auto: true  }
 
 
   # Print deprecation notices to the Rails logger.

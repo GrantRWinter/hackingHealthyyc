@@ -27,7 +27,7 @@
   	  <%= f.email_field "email" %>
   	</div>
   	<div>
-  	  <%= f.label "phone_number" %><br>
+  	  <%= f.label "cell-phone_number" %><br>
   	  <%= f.text_field "phone_number" %>
   	</div>
   	<div>
@@ -38,7 +38,22 @@
   	  <%= f.label "password_confirmation" %><br>
   	  <%= f.text_field "password_confirmation" %>
   	</div>
-  	<div>
+    <div>
+      <%= f.label "my advocate" %><br>
+      <%= f.text_field "advocate" %>
+  	</div>
+    <div>
+      <%= f.label "Advocate Cell Phone Number" %><br>
+      <%= f.text_field "advocate_cell" %>
+    </div>
+    <div>
+      <%= f.label "Advocate Email" %><br>
+      <%= f.text_field "advocate_email" %>
+    </div>
+    <div>
+      <%= f.label "I have to be at the hospital at:" %>
+      <%= f.datetime_select "surgery_date" %>
+    </div>
   	  <%= f.submit "Submit", class: "btn btn-info dropdown-toggle btn-large" %> 
   	</div>
   </div>

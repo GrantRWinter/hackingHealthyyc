@@ -1,9 +1,9 @@
 <div class="row welcome">
-  <h1 class="offset1" id="hello">hello <%= @user.first_name %> and welcome to Kuu</h1>
+  <h1 class="offset1" id="hello">hello <%= @user.first_name.capitalize %> and welcome to Hacking Health YYC</h1>
 </div>
 
 <div class="row birds">
-  <div class="offset1">
+  <div class="col-md-offset-1">
     <h2>Send a message</h2>
     <h4 id="fill">by filling in the form below:</h4>
     <%= form_for @message, url: user_messages_path(@user) do |f| %>
@@ -18,7 +18,7 @@
        </div>
     <% end %>
 
-    <div class="form span7">
+    <div class="form col-md-7">
         <div>    
           <%= f.label "recipient" %><br>
           <%= f.text_field "recipient" %>
@@ -41,7 +41,7 @@
         </div>
         <br>       
           <div id="current_time">
-            <p> The current Pacific Standard Time is: <%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %> </p>
+            <p> The current Time is (Mountain Time): <%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %> </p>
           </div>
         <br>
         <div>
