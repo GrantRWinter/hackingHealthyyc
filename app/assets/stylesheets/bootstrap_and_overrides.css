@@ -1,6 +1,10 @@
 header {
     font-size: 4em;
-    background-color: #c1c7e9;
+    background-color: #413659;
+    color: white;
+    font-family: Pacifico;
+    text-align: center;
+    padding: 3rem;
   }
 
   .user_form{
